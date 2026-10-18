@@ -1,0 +1,24 @@
+[Unit]
+Description=AdGuard Home Docker Container
+After=docker.service
+Requires=docker.service
+
+[Service]
+User=pi
+Group=pi
+Restart=always
+ExecStartPre=-/usr/bin/docker rm -f adguardhome
+ExecStart=/usr/bin/docker run --name adguardhome \
+    -v /home/pi/.config/dockers/adguard/work:/opt/adguardhome/work \
+    -v /home/pi/.config/dockers/adguard/conf:/opt/adguardhome/conf \
+    -p 53:53/tcp -p 53:53/udp \
+    -p 80:80/tcp -p 443:443/tcp -p 443:443/udp -p 3000:3000/tcp \
+    -p 853:853/tcp \
+    -p 784:784/udp -p 853:853/udp -p 8853:8853/udp \
+    -p 5443:5443/tcp -p 5443:5443/udp \
+    adguard/adguardhome
+ExecStop=/usr/bin/docker stop -t 2 adguardhome
+
+[Install]
+WantedBy=multi-user.target
+

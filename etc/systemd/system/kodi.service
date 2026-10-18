@@ -1,0 +1,24 @@
+[Unit]
+Description=Kodi standalone
+After=remote-fs.target systemd-user-sessions.service network-online.target sound.target bluetooth.target polkit.service upower.service
+Wants=network-online.target polkit.service upower.service
+# KLÍČOVÉ: Služba musí vypnout standardní přihlašovací konzoli na tty1
+Conflicts=getty@tty1.service
+
+[Service]
+User=pi
+Group=pi
+# Zajišťuje přístup k dalším hardwarovým skupinám
+SupplementaryGroups=audio video input render tty
+PAMName=login
+TTYPath=/dev/tty1
+ExecStart=/usr/bin/kodi-standalone
+ExecStop=/usr/bin/killall --exact --wait kodi.bin
+Restart=on-abort
+StandardInput=tty
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target
+Alias=display-manager.service
+
