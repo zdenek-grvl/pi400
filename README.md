@@ -1,6 +1,16 @@
 
 # Install steps
 
+## Prereq 
+```sh
+pacman -S rpi-imager
+```
+
+Install **Raspberry Pi OS Lite** to the SD card 
+
+## expand card
+in the `raspi-config`
+
 ## install kodi
 ```sh
 apt install kodi kodi-inputstream-adaptive
@@ -58,7 +68,7 @@ make package-addons
 cp /home/pi/pvr.sledovanitv.cz/build/pvr.sledovanitv.cz-prefix/src/pvr.sledovanitv.cz-build/*.zip /home/pi/
 ```
 
-## ivysilani
+## iVysilani
 Install custom repo from `custom_repos`
 
 ## YouTube
