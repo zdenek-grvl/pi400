@@ -48,10 +48,10 @@ setcap cap_net_bind_service=+ep $(which rootlesskit)
 cp ./etc/systemd/system/*.service /etc/systemd/system/
 ```
 
-### enable and start
+### enable (and start)
 ```sh
 systemctl enable --now adguard
-systemctl enable --now kodi
+systemctl enable kodi
 ```
 
 ## build SledovaniTV PVR addon
@@ -79,3 +79,14 @@ Install custom repo from `custom_repos`
 After starting the docker finish the setup at: http://192.168.55.100:3000/
 
  
+## kodi settings
+Copy over settings from `dot_kodi` 
+
+## start
+```sh
+systemctl start kodi
+systemctl status kodi
+journalctl -u kodi
+```
+
+
