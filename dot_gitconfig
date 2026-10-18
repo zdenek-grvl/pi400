@@ -1,0 +1,12 @@
+[user]
+	email = abc@email.cz
+	name = ZdenekAtPi
+
+[alias]
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
+
+[core]
+	editor = vim
