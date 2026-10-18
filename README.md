@@ -65,6 +65,6 @@ Install custom repo from `custom_repos`
 1. Install **YouTube** from standard repos
 2. Restore settings by copying from `dot_kodi` to `~/.kodi`
     
-# AdGuard
-After starting the docker go to http://192.168.55.100:3000/
+## AdGuard
+After starting the docker finish the setup at: http://192.168.55.100:3000/
 
