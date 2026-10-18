@@ -1,0 +1,35 @@
+<sources>
+    <programs>
+        <default pathversion="1"></default>
+    </programs>
+    <video>
+        <default pathversion="1"></default>
+        <source>
+            <name>filmy</name>
+            <path pathversion="1">nfs://192.168.55.10/mnt/user/filmy/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>ssd_tmp</name>
+            <path pathversion="1">nfs://192.168.55.10/mnt/user/ssd_tmp/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>torrent</name>
+            <path pathversion="1">nfs://192.168.55.10/mnt/user/torrent/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </video>
+    <music>
+        <default pathversion="1"></default>
+    </music>
+    <pictures>
+        <default pathversion="1"></default>
+    </pictures>
+    <files>
+        <default pathversion="1"></default>
+    </files>
+    <games>
+        <default pathversion="1"></default>
+    </games>
+</sources>

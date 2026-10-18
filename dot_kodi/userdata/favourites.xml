@@ -1,0 +1,4 @@
+<favourites>
+    <favourite name="[COLOR yellow]Rai News 24[/COLOR]: TITOLI + TG GIORNO" thumb="https://www.raiplay.it/dl/img/2025/09/21/1758486390677_news24%202048.jpg">PlayMedia("plugin://plugin.video.raitv/?mode=play&amp;url=https%3A%2F%2Fmediapolis.rai.it%2Frelinker%2FrelinkerServlet.htm%3Fcont%3D1")</favourite>
+    <favourite name="Manu a Matěj" thumb="https://ctfs.ceskatelevize.cz/porady-s3/11805410130-manu-a-matej/images/karta-poradu.jpg">ActivateWindow(10025,"plugin://plugin.video.ivysilani.cz/?action=list_series&amp;id=226544160310004&amp;label=Vyhled%c3%a1v%c3%a1n%c3%ad%20%2f%20Nov%c3%a9%20hled%c3%a1n%c3%ad%2fManu%20a%c2%a0Mat%c4%9bj&amp;page=1",return)</favourite>
+</favourites>
